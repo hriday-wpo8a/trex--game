@@ -55,11 +55,11 @@ function setup() {
   gameOver= createSprite(300,100);
   gameOver.addImage(gameOverImage);
   gameOver.scale = 0.5;
-  gameOver.visble = false
+  gameOver.visible = false
   restart= createSprite(300,140);
   restart.addImage(restartImage);
   restart.scale = 0.5;
-  restart.visble = false
+  restart.visible = false
  
   
 }
@@ -99,7 +99,7 @@ function draw() {
     cloudsGroup.setVelocityXEach(0);
     
     //change the trex animation
-    trex.changeAnimation("collided".trex_collided);
+    trex.changeAnimation("collided",trex_collided);
     
     //set lifetime of the game objects so that they are never destroyed
     obstaclesGroup.setLifetimeEach(-1);
